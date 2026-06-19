@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Aesthetic Protocol — Lazar Popadić</title>
+  <meta name="description" content="A private facial-analysis report and practical action plan.">
+  <meta name="theme-color" content="#f7f4ef">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/img/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Protocol">
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">L</span>
+        <span class="brand__name">Aesthetic Protocol<small>Lazar Popadić</small></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="index.html" aria-current="page">Overview</a></li>
+          <li><a href="analysis.html">Analysis</a></li>
+          <li><a href="report.html">Report</a></li>
+          <li><a href="plan.html">Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__grid">
+        <div class="reveal">
+          <p class="eyebrow">Facial Analysis · June 2026</p>
+          <h1 class="display">Aesthetic<br>Protocol</h1>
+          <p class="lede" style="margin-top:1.2rem;max-width:44ch">
+            A cephalometric reading of eleven facial features, with a measured
+            scorecard and a practical plan for refinement — reorganised from the
+            commissioned QOVES report into a private, readable archive.
+          </p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.8rem">
+            <a class="btn btn--solid" href="report.html">Read the full report <span class="arrow">→</span></a>
+            <a class="btn" href="plan.html">See the action plan</a>
+          </div>
+          <div class="hero__meta">
+            <div><span>Commissioned</span><strong>QOVES Inc.</strong></div>
+            <div><span>Edition</span><strong>June 2026</strong></div>
+            <div><span>Features</span><strong>Eleven</strong></div>
+          </div>
+          <div class="scroll-cue"><span class="line"></span> Scroll to your scores</div>
+        </div>
+        <div class="hero__portrait reveal reveal-delay-1">
+          <picture>
+            <source srcset="assets/img/photos/hero-front.webp" type="image/webp">
+            <img class="img-fade" src="assets/img/photos/hero-front.jpg" alt="Front-facing portrait" width="1400" height="1400">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <hr class="rule wrap" style="border:0">
+
+    <!-- SCORES -->
+    <section class="section wrap" id="scores">
+      <p class="eyebrow reveal">The measured read</p>
+      <h2 class="reveal" style="max-width:18ch">Your face in numbers, before any words.</h2>
+      <p class="lede reveal" style="max-width:52ch;margin-top:1rem">
+        Four objective measures from the analysis dashboard. Scores compare you
+        against population data for your demographic — higher is more harmonious,
+        more typical, or more balanced.
+      </p>
+
+      <div class="grid grid-3" data-animate style="margin-top:2.4rem">
+        <div class="card score-card reveal">
+          <div class="score-card__top">
+            <div>
+              <div class="score-card__num"><span data-count="76">0</span><small>/100</small></div>
+              <p class="score-card__label">Symmetry</p>
+            </div>
+            <svg class="gauge" viewBox="0 0 64 64" aria-hidden="true">
+              <circle class="gauge__track" cx="32" cy="32" r="26"></circle>
+              <circle class="gauge__bar" cx="32" cy="32" r="26" data-gauge="76"></circle>
+            </svg>
+          </div>
+          <p class="score-card__read">High — quite symmetric, with strong left/right balance.</p>
+        </div>
+
+        <div class="card score-card reveal reveal-delay-1">
+          <div class="score-card__top">
+            <div>
+              <div class="score-card__num"><span data-count="83">0</span><small>/100</small></div>
+              <p class="score-card__label">Proportions</p>
+            </div>
+            <svg class="gauge" viewBox="0 0 64 64" aria-hidden="true">
+              <circle class="gauge__track" cx="32" cy="32" r="26"></circle>
+              <circle class="gauge__bar" cx="32" cy="32" r="26" data-gauge="83"></circle>
+            </svg>
+          </div>
+          <p class="score-card__read">High — well-balanced facial thirds with a compact midface.</p>
+        </div>
+
+        <div class="card score-card reveal reveal-delay-2">
+          <div class="score-card__top">
+            <div>
+              <div class="score-card__num"><span data-count="72">0</span><small>/100</small></div>
+              <p class="score-card__label">Averageness</p>
+            </div>
+            <svg class="gauge" viewBox="0 0 64 64" aria-hidden="true">
+              <circle class="gauge__track" cx="32" cy="32" r="26"></circle>
+              <circle class="gauge__bar" cx="32" cy="32" r="26" data-gauge="72"></circle>
+            </svg>
+          </div>
+          <p class="score-card__read">Above average — typical proportions with distinctive touches.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:1.5rem">
+        <div class="card reveal">
+          <p class="score-card__label">Face Shape</p>
+          <div class="score-card__num" style="font-size:2.4rem;margin:2px 0 6px">Oval</div>
+          <p class="score-card__read">Normal widths at forehead, cheeks and jaw with average length — no single area dominates.</p>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <p class="score-card__label">Sexual Dimorphism</p>
+          <div class="score-card__num" style="font-size:2.4rem;margin:2px 0 6px">Masculine</div>
+          <p class="score-card__read">A clearly masculine read driven by the jaw, nose and hairline — strong but not extreme.</p>
+        </div>
+      </div>
+      <p class="faint reveal" style="font-size:0.82rem;margin-top:1.2rem">
+        Explore each measure in detail on the <a href="analysis.html" style="color:var(--clay-deep)">Analysis</a> page.
+      </p>
+    </section>
+
+    <!-- AT A GLANCE -->
+    <section class="section wrap" style="background:var(--surface-2);border-radius:var(--r-lg)">
+      <div class="prose">
+        <p class="eyebrow reveal">At a glance</p>
+        <h2 class="reveal">A strong masculine framework. The goal is refinement, not change.</h2>
+        <p class="lede reveal" style="margin-top:1rem">
+          The analysis reads an oval face with a clear jaw and dense hair already
+          working in your favour. Most of the upside comes from precise grooming,
+          consistent skin care and gradual body recomposition — small, compounding
+          adjustments rather than reinvention.
+        </p>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:2rem">
+        <div class="card reveal">
+          <p class="eyebrow">Standout strengths</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <span class="chip"><span class="dot"></span>Roman nose</span>
+            <span class="chip"><span class="dot"></span>Long-ramus jaw</span>
+            <span class="chip"><span class="dot"></span>High cheekbones</span>
+            <span class="chip"><span class="dot"></span>Dense, youthful hair</span>
+            <span class="chip"><span class="dot"></span>Oval balance</span>
+            <span class="chip"><span class="dot"></span>Good symmetry</span>
+          </div>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <p class="eyebrow">Where to build</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <a class="chip chip--clay" href="plan.html#plan-haircut">Haircut &amp; styling</a>
+            <a class="chip chip--clay" href="plan.html#plan-skin">Daily skin care</a>
+            <a class="chip chip--clay" href="plan.html#plan-body">Body recomposition</a>
+            <a class="chip chip--clay" href="plan.html#plan-beard">Beard shaping</a>
+            <a class="chip chip--clay" href="plan.html#plan-eyes">Eye care</a>
+            <a class="chip chip--clay" href="plan.html#plan-neck">Neck training</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTRY CARDS -->
+    <section class="section wrap">
+      <p class="divider-label reveal">Two ways in</p>
+      <div class="grid grid-2" style="margin-top:1.6rem">
+        <a class="card card--hover card--link reveal" href="report.html">
+          <p class="eyebrow">Section 01</p>
+          <h3 style="font-size:1.7rem">The Full Protocol</h3>
+          <p class="muted" style="margin:10px 0 0">Every feature, finding and recommendation — reconstructed in full, with before/after comparisons.</p>
+          <span class="link-cue">Open report <span class="arrow">→</span></span>
+        </a>
+        <a class="card card--hover card--link reveal reveal-delay-1" href="plan.html">
+          <p class="eyebrow">Section 02</p>
+          <h3 style="font-size:1.7rem">The Action Plan</h3>
+          <p class="muted" style="margin:10px 0 0">The practical, non-invasive roadmap — organised by daily, weekly and ongoing effort. Filler excluded.</p>
+          <span class="link-cue">Open plan <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="grid grid-2">
+        <div>
+          <h4>Aesthetic Protocol</h4>
+          <p class="muted" style="max-width:42ch">A personal facial-analysis archive based on the report commissioned from QOVES Inc., June 2026, reorganised for private reference.</p>
+        </div>
+        <div>
+          <p class="eyebrow">Disclaimer</p>
+          <p class="disclaimer">This material is for general informational and educational purposes only. It is not medical, clinical or professional advice, diagnosis or treatment. Any in-clinic treatment or prescription product should be discussed with and approved by a qualified medical professional before use.</p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>Protocol Edition · June 2026</span>
+        <span data-year>2026</span>
+        <span>Private use · not indexed</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <img alt="">
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/sw-register.js"></script>
+</body>
+</html>
