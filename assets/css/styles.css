@@ -471,3 +471,49 @@ a.chip--clay:hover { background: var(--clay); color: #fff; transform: translateY
 .pmeter__tag { font-size: 0.6rem; color: var(--clay-deep); width: 10px; font-weight: 600; }
 .meter { flex: 1; height: 5px; background: var(--line); border-radius: 999px; overflow: hidden; }
 .meter__fill { display: block; height: 100%; background: var(--clay); border-radius: 999px; }
+
+/* ===== Interactive routine =========================================== */
+.routine-controls { display: flex; flex-direction: column; gap: 16px; }
+.routine-control p { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--clay-deep); font-weight: 600; margin: 0 0 8px; }
+.seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg button {
+  border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink-soft);
+  border-radius: 999px; padding: 9px 15px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.01em;
+  transition: all var(--t-fast) var(--ease); text-align: left;
+}
+.seg button:hover { border-color: var(--clay-soft); color: var(--ink); }
+.seg button.is-active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.seg--phase button { display: flex; flex-direction: column; gap: 2px; min-width: 116px; }
+.seg--phase button b { font-family: var(--serif); font-weight: 400; font-size: 0.95rem; }
+.seg--phase button span { font-size: 0.7rem; opacity: 0.8; }
+.seg--day button { min-width: 52px; text-align: center; justify-content: center; }
+
+.routine-context { font-family: var(--serif); font-size: clamp(1.2rem, 2.4vw, 1.6rem); margin: 22px 0 0; }
+
+.routine-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(16px, 2.5vw, 26px); margin-top: 18px; }
+@media (max-width: 720px) { .routine-grid { grid-template-columns: 1fr; } }
+.rcol { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: clamp(18px, 2.4vw, 26px); }
+.rcol--pm { background: var(--surface-2); }
+.rcol__head { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.rcol__icon { width: 26px; height: 26px; flex-shrink: 0; color: var(--clay); }
+.rcol__title { font-family: var(--serif); font-size: 1.25rem; }
+.rcol__when { margin-left: auto; font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); }
+
+.rsteps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.rstep { display: flex; gap: 12px; align-items: flex-start; }
+.rstep__n { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--clay-wash); color: var(--clay-deep); display: grid; place-items: center; font-size: 0.78rem; font-weight: 600; margin-top: 1px; }
+.rstep--active .rstep__n { background: var(--clay); color: #fff; }
+.rstep__body { display: flex; flex-direction: column; }
+.rstep__role { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; color: var(--clay-deep); }
+.rstep__role em { color: var(--ink-faint); font-style: normal; text-transform: none; letter-spacing: 0; font-weight: 500; }
+.rstep--active .rstep__role { color: var(--clay-deep); }
+.rstep__prod { font-size: 0.98rem; color: var(--ink); }
+.rstep__note { font-size: 0.78rem; color: var(--ink-faint); margin-top: 1px; }
+.rest-note { margin: 12px 0 0; font-size: 0.85rem; color: var(--ink-soft); background: var(--surface); border: 1px dashed var(--line-strong); border-radius: var(--r-sm); padding: 10px 13px; }
+
+.routine-extras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: clamp(20px, 3vw, 30px); }
+@media (max-width: 720px) { .routine-extras { grid-template-columns: 1fr; } }
+.rextra { border: 1px solid var(--line); border-radius: var(--r-md); padding: 16px 18px; background: var(--surface); }
+.rextra p.eyebrow { margin-bottom: 6px; }
+.rextra strong { font-family: var(--serif); font-weight: 400; font-size: 1.05rem; }
+.rextra span { display: block; font-size: 0.86rem; color: var(--ink-soft); margin-top: 3px; }

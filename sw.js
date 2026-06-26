@@ -2,14 +2,15 @@
    Network-first for HTML (fresh content), cache-first for assets.
    Paths are resolved against the registration scope so it works under
    any GitHub Pages subpath (e.g. /aesthetic-protocol/). */
-var VERSION = "ap-v4";
+var VERSION = "ap-v5";
 var SCOPE = self.registration.scope;
 
 var PRECACHE = [
-  "", "index.html", "analysis.html", "report.html", "plan.html", "404.html",
+  "", "index.html", "analysis.html", "report.html", "plan.html", "routine.html", "404.html",
   "assets/css/styles.css",
   "assets/js/main.js",
   "assets/js/products.js",
+  "assets/js/routine.js",
   "assets/js/sw-register.js",
   "assets/fonts/fraunces-latin.woff2",
   "assets/fonts/inter-latin.woff2",
