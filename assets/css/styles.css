@@ -475,18 +475,24 @@ a.chip--clay:hover { background: var(--clay); color: #fff; transform: translateY
 /* ===== Interactive routine =========================================== */
 .routine-controls { display: flex; flex-direction: column; gap: 16px; }
 .routine-control p { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--clay-deep); font-weight: 600; margin: 0 0 8px; }
-.seg { display: flex; flex-wrap: wrap; gap: 8px; }
+.seg { display: grid; gap: 8px; }
+.seg--phase { grid-template-columns: repeat(4, 1fr); max-width: 600px; }
+.seg--day { grid-template-columns: repeat(7, 1fr); gap: 6px; max-width: 480px; }
 .seg button {
   border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink-soft);
-  border-radius: 999px; padding: 9px 15px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.01em;
-  transition: all var(--t-fast) var(--ease); text-align: left;
+  border-radius: 999px; padding: 9px 8px; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.01em;
+  transition: all var(--t-fast) var(--ease); text-align: center;
 }
 .seg button:hover { border-color: var(--clay-soft); color: var(--ink); }
 .seg button.is-active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-.seg--phase button { display: flex; flex-direction: column; gap: 2px; min-width: 116px; }
+.seg--phase button { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .seg--phase button b { font-family: var(--serif); font-weight: 400; font-size: 0.95rem; }
 .seg--phase button span { font-size: 0.7rem; opacity: 0.8; }
-.seg--day button { min-width: 52px; text-align: center; justify-content: center; }
+.seg--day button { padding: 9px 2px; font-size: 0.8rem; }
+@media (max-width: 560px) {
+  .seg--phase { grid-template-columns: repeat(2, 1fr); max-width: none; }
+  .seg--day { max-width: none; }
+}
 
 .routine-context { font-family: var(--serif); font-size: clamp(1.2rem, 2.4vw, 1.6rem); margin: 22px 0 0; }
 
